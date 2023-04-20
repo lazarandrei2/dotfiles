@@ -16,12 +16,15 @@ return require('packer').startup(function(use)
     --    use 'rebelot/kanagawa.nvim'
     --   vim.cmd("colorscheme kanagawa-dragon")
 
-    use({ 'rose-pine/neovim', as = 'rose-pine' })
-    vim.cmd('colorscheme rose-pine-dawn')
+    --    use({ 'rose-pine/neovim', as = 'rose-pine' })
+    --    vim.cmd('colorscheme rose-pine-dawn')
 
     --use 'mhartington/oceanic-next'
     --    vim.cmd('colorscheme OceanicNext')
 
+    use('arzg/vim-colors-xcode')
+    vim.cmd('colorscheme xcodedarkhc')
+    
     use 'nvim-tree/nvim-web-devicons'
     use {
         'nvim-lualine/lualine.nvim',

@@ -1,5 +1,5 @@
 function ColorMyPencils(color)
-	color = color or "rose-pine-dawn"
+	color = color or "xcodedarkhc"
 	vim.cmd.colorscheme(color)
 end
 
