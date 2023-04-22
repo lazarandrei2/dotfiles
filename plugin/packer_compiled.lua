@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["base16-vim"] = {
-    loaded = true,
-    path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/base16-vim",
-    url = "https://github.com/chriskempson/base16-vim"
-  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -143,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["rose-pine"] = {
+    loaded = true,
+    path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/rose-pine",
+    url = "https://github.com/rose-pine/neovim"
   },
   ["telescope.nvim"] = {
     loaded = true,
