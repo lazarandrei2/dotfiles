@@ -13,11 +13,10 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
-    --    use 'rebelot/kanagawa.nvim'
-    --    vim.cmd("colorscheme kanagawa-dragon")
+    use 'rebelot/kanagawa.nvim'
 
     use({ 'rose-pine/neovim', as = 'rose-pine' })
-    vim.cmd('colorscheme rose-pine')
+    --    vim.cmd('colorscheme rose-pine')
 
     --    use 'mhartington/oceanic-next'
     --    vim.cmd('colorscheme OceanicNext')
