@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
   },
+  nvim = {
+    loaded = true,
+    path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/nvim",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -168,6 +173,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/vim",
     url = "https://github.com/nordtheme/vim"
+  },
+  ["vim-colors-xcode"] = {
+    loaded = true,
+    path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/vim-colors-xcode",
+    url = "https://github.com/lunacookies/vim-colors-xcode"
   },
   ["vim-fugitive"] = {
     loaded = true,
