@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["kanagawa.nvim"] = {
-    loaded = true,
-    path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
-    url = "https://github.com/rebelot/kanagawa.nvim"
-  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -108,16 +103,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["nightfox.nvim"] = {
-    loaded = true,
-    path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
-    url = "https://github.com/EdenEast/nightfox.nvim"
-  },
-  nvim = {
-    loaded = true,
-    path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/nvim",
-    url = "https://github.com/catppuccin/nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -168,16 +153,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
-  },
-  vim = {
-    loaded = true,
-    path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/vim",
-    url = "https://github.com/nordtheme/vim"
-  },
-  ["vim-colors-xcode"] = {
-    loaded = true,
-    path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/vim-colors-xcode",
-    url = "https://github.com/lunacookies/vim-colors-xcode"
   },
   ["vim-fugitive"] = {
     loaded = true,

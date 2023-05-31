@@ -40,4 +40,10 @@ lsp.on_attach(function(client, bufnr)
 	vim.keymap.set("i", "<C-h>", function() vim.lsp.bug.signature_help() end, opts)
 end)
 
+lsp.set_server_config({
+  on_init = function(client)
+    client.server_capabilities.semanticTokensProvider = nil
+  end,
+})
+
 lsp.setup()

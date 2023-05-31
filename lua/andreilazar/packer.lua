@@ -13,12 +13,7 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
-    use 'rebelot/kanagawa.nvim'
     use({ 'rose-pine/neovim', as = 'rose-pine' })
-    use 'EdenEast/nightfox.nvim'
-    use 'nordtheme/vim'
-    use 'lunacookies/vim-colors-xcode'
-    use 'catppuccin/nvim'
 
     use 'nvim-tree/nvim-web-devicons'
     use {

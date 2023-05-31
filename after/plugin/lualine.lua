@@ -1,9 +1,9 @@
-require("lualine").setup{
+ require("lualine").setup{
 	options = {
 		icons_enabled = true, 
-  		theme = "catppuccin-frappe",
+  		theme = "auto",
 		component_separators = "|",
-		section_separators = "",
-	},
+        section_separators = "",
+    },
 }
 
