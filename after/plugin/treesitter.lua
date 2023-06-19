@@ -1,6 +1,6 @@
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all" (the five listed parsers should always be installed)
-  ensure_installed = { "javascript", "go", "typescript", "c", "lua", "vim", "query" },
+  ensure_installed = { "javascript", "go", "typescript", "svelte", "c", "lua", "vim", "query" },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
@@ -12,7 +12,7 @@ require'nvim-treesitter.configs'.setup {
   -- List of parsers to ignore installing (for "all")
 
   highlight = {
-    enable = false,
+    enable = true,
    
     -- Or use a function for more flexibility, e.g. to disable slow treesitter highlight for large files
     disable = function(lang, buf)

@@ -1,2 +1,2 @@
-vim.cmd.colorscheme('xcode-custom')
+vim.cmd.colorscheme('material-darker')
 
