@@ -14,23 +14,23 @@ let s:t_Co = exists('&t_Co') && !empty(&t_Co) && &t_Co > 1 ? &t_Co : 1
 
 if (has('termguicolors') && &termguicolors) || has('gui_running')
   if &background ==# 'dark'
-    let g:terminal_ansi_colors = ['#414453', '#d9c97c', '#78c2b3', '#d9c97c', '#4eb0cc', '#ff7ab2', '#b281eb', '#dfdfe0', '#7f8c98', '#d9c97c', '#acf2e4', '#ffa14f', '#6bdfff', '#ff7ab2', '#dabaff', '#dfdfe0']
+    let g:terminal_ansi_colors = ['#414453', '#fff261', '#66d4cf', '#fff261', '#70d7ff', '#ff6482', '#ff6482', '#dfdfe0', '#7f8c98', '#fff261', '#66d4cf', '#ff6961', '#70d7ff', '#ff6482', '#ff6482', '#dfdfe0']
     if has('nvim')
       let g:terminal_color_0 = '#414453'
-      let g:terminal_color_1 = '#d9c97c'
-      let g:terminal_color_2 = '#78c2b3'
-      let g:terminal_color_3 = '#d9c97c'
-      let g:terminal_color_4 = '#4eb0cc'
-      let g:terminal_color_5 = '#ff7ab2'
-      let g:terminal_color_6 = '#b281eb'
+      let g:terminal_color_1 = '#fff261'
+      let g:terminal_color_2 = '#66d4cf'
+      let g:terminal_color_3 = '#fff261'
+      let g:terminal_color_4 = '#70d7ff'
+      let g:terminal_color_5 = '#ff6482'
+      let g:terminal_color_6 = '#ff6482'
       let g:terminal_color_7 = '#dfdfe0'
       let g:terminal_color_8 = '#7f8c98'
-      let g:terminal_color_9 = '#d9c97c'
-      let g:terminal_color_10 = '#acf2e4'
-      let g:terminal_color_11 = '#ffa14f'
-      let g:terminal_color_12 = '#6bdfff'
-      let g:terminal_color_13 = '#ff7ab2'
-      let g:terminal_color_14 = '#dabaff'
+      let g:terminal_color_9 = '#fff261'
+      let g:terminal_color_10 = '#66d4cf'
+      let g:terminal_color_11 = '#ff6961'
+      let g:terminal_color_12 = '#70d7ff'
+      let g:terminal_color_13 = '#ff6482'
+      let g:terminal_color_14 = '#ff6482'
       let g:terminal_color_15 = '#dfdfe0'
     endif
     if !exists('g:xcode_green_comments')
@@ -67,11 +67,11 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi PmenuSbar guifg=#393b44 guibg=#393b44 gui=NONE cterm=NONE
     hi PmenuSel guifg=#dfdfe0 guibg=#0f5bca gui=NONE cterm=NONE
     hi PmenuThumb guifg=#414453 guibg=#414453 gui=NONE cterm=NONE
-    hi ErrorMsg guifg=#d9c97c guibg=NONE gui=NONE cterm=NONE
+    hi ErrorMsg guifg=#fff261 guibg=NONE gui=NONE cterm=NONE
     hi ModeMsg guifg=#7f8c98 guibg=NONE gui=NONE cterm=NONE
-    hi MoreMsg guifg=#ff7ab2 guibg=NONE gui=NONE cterm=NONE
-    hi Question guifg=#ff7ab2 guibg=NONE gui=NONE cterm=NONE
-    hi WarningMsg guifg=#ffa14f guibg=NONE gui=NONE cterm=NONE
+    hi MoreMsg guifg=#ff6482 guibg=NONE gui=NONE cterm=NONE
+    hi Question guifg=#ff6482 guibg=NONE gui=NONE cterm=NONE
+    hi WarningMsg guifg=#ff6961 guibg=NONE gui=NONE cterm=NONE
     hi ColorColumn guifg=NONE guibg=#2f3037 gui=NONE cterm=NONE
     hi CursorColumn guifg=NONE guibg=#2f3037 gui=NONE cterm=NONE
     hi CursorLine guifg=NONE guibg=#2f3037 gui=NONE cterm=NONE
@@ -83,23 +83,23 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi IncSearch guifg=#292a30 guibg=#fef937 gui=NONE cterm=NONE
     hi Search guifg=#dfdfe0 guibg=#414453 gui=NONE cterm=NONE
     hi Visual guifg=NONE guibg=#414453 gui=NONE cterm=NONE
-    hi DiffAdd guifg=#acf2e4 guibg=#243330 gui=NONE cterm=NONE
-    hi DiffChange guifg=#ffa14f guibg=NONE gui=NONE cterm=NONE
-    hi DiffDelete guifg=#d9c97c guibg=#3b2d2b gui=NONE cterm=NONE
-    hi DiffText guifg=#ffa14f guibg=#382e27 gui=NONE cterm=NONE
+    hi DiffAdd guifg=#66d4cf guibg=#243330 gui=NONE cterm=NONE
+    hi DiffChange guifg=#ff6961 guibg=NONE gui=NONE cterm=NONE
+    hi DiffDelete guifg=#fff261 guibg=#3b2d2b gui=NONE cterm=NONE
+    hi DiffText guifg=#ff6961 guibg=#382e27 gui=NONE cterm=NONE
     hi Comment guifg=#7f8c98 guibg=NONE gui=NONE cterm=NONE
-    hi Error guifg=#292a30 guibg=#d9c97c gui=NONE cterm=NONE
-    hi PreProc guifg=#ffa14f guibg=NONE gui=NONE cterm=NONE
-    hi Special guifg=#78c2b3 guibg=NONE gui=NONE cterm=NONE
-    hi Statement guifg=#ff7ab2 guibg=NONE gui=bold cterm=bold
-    hi Character guifg=#d9c97c guibg=NONE gui=NONE cterm=NONE
-    hi Directory guifg=#6bdfff guibg=NONE gui=NONE cterm=NONE
-    hi Number guifg=#d9c97c guibg=NONE gui=NONE cterm=NONE
+    hi Error guifg=#292a30 guibg=#fff261 gui=NONE cterm=NONE
+    hi PreProc guifg=#ff6961 guibg=NONE gui=NONE cterm=NONE
+    hi Special guifg=#66d4cf guibg=NONE gui=NONE cterm=NONE
+    hi Statement guifg=#ff6482 guibg=NONE gui=bold cterm=bold
+    hi Character guifg=#fff261 guibg=NONE gui=NONE cterm=NONE
+    hi Directory guifg=#70d7ff guibg=NONE gui=NONE cterm=NONE
+    hi Number guifg=#fff261 guibg=NONE gui=NONE cterm=NONE
     hi SpecialComment guifg=#a3b1bf guibg=NONE gui=NONE cterm=NONE
-    hi String guifg=#d9c97c guibg=NONE gui=NONE cterm=NONE
+    hi String guifg=#fff261 guibg=NONE gui=NONE cterm=NONE
     hi Title guifg=#dfdfe0 guibg=NONE gui=bold cterm=bold
     hi Todo guifg=#a3b1bf guibg=NONE gui=bold cterm=bold
-    hi Underlined guifg=#6bdfff guibg=NONE gui=underline cterm=underline
+    hi Underlined guifg=#70d7ff guibg=NONE gui=underline cterm=underline
     hi SpellBad guifg=NONE guibg=NONE gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi SpellCap guifg=NONE guibg=NONE gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
     hi SpellLocal guifg=NONE guibg=NONE gui=undercurl ctermfg=NONE ctermbg=NONE cterm=undercurl
@@ -315,39 +315,39 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi! link markdownListMarker markdownDelimiter
     hi! link markdownRule markdownDelimiter
     hi! link markdownUrl Underlined
-    hi markdownDelimiter guifg=#78c2b3 guibg=NONE gui=NONE cterm=NONE
-    hi markdownCode guifg=#dabaff guibg=#393b44 gui=NONE cterm=NONE
+    hi markdownDelimiter guifg=#66d4cf guibg=NONE gui=NONE cterm=NONE
+    hi markdownCode guifg=#ff6482 guibg=#393b44 gui=NONE cterm=NONE
     if g:xcode_green_comments
       hi Comment guifg=#84b360 guibg=NONE gui=NONE cterm=NONE
       hi SpecialComment guifg=#b0e687 guibg=NONE gui=NONE cterm=NONE
       hi Todo guifg=#b0e687 guibg=NONE gui=bold cterm=bold
     endif
     if g:xcode_emph_types
-      hi Typedef guifg=#6bdfff guibg=NONE gui=NONE cterm=NONE
-      hi LocalType guifg=#acf2e4 guibg=NONE gui=NONE cterm=NONE
-      hi LibraryType guifg=#dabaff guibg=NONE gui=NONE cterm=NONE
+      hi Typedef guifg=#70d7ff guibg=NONE gui=NONE cterm=NONE
+      hi LocalType guifg=#66d4cf guibg=NONE gui=NONE cterm=NONE
+      hi LibraryType guifg=#ff6482 guibg=NONE gui=NONE cterm=NONE
     else
-      hi Typedef guifg=#4eb0cc guibg=NONE gui=NONE cterm=NONE
-      hi LocalType guifg=#78c2b3 guibg=NONE gui=NONE cterm=NONE
-      hi LibraryType guifg=#b281eb guibg=NONE gui=NONE cterm=NONE
+      hi Typedef guifg=#70d7ff guibg=NONE gui=NONE cterm=NONE
+      hi LocalType guifg=#66d4cf guibg=NONE gui=NONE cterm=NONE
+      hi LibraryType guifg=#ff6482 guibg=NONE gui=NONE cterm=NONE
     endif
     if g:xcode_emph_funcs
-      hi FunctionDef guifg=#6bdfff guibg=NONE gui=NONE cterm=NONE
-      hi LocalFunc guifg=#acf2e4 guibg=NONE gui=NONE cterm=NONE
-      hi LibraryFunc guifg=#dabaff guibg=NONE gui=NONE cterm=NONE
+      hi FunctionDef guifg=#70d7ff guibg=NONE gui=NONE cterm=NONE
+      hi LocalFunc guifg=#66d4cf guibg=NONE gui=NONE cterm=NONE
+      hi LibraryFunc guifg=#ff6482 guibg=NONE gui=NONE cterm=NONE
     else
-      hi FunctionDef guifg=#4eb0cc guibg=NONE gui=NONE cterm=NONE
-      hi LocalFunc guifg=#78c2b3 guibg=NONE gui=NONE cterm=NONE
-      hi LibraryFunc guifg=#b281eb guibg=NONE gui=NONE cterm=NONE
+      hi FunctionDef guifg=#70d7ff guibg=NONE gui=NONE cterm=NONE
+      hi LocalFunc guifg=#66d4cf guibg=NONE gui=NONE cterm=NONE
+      hi LibraryFunc guifg=#ff6482 guibg=NONE gui=NONE cterm=NONE
     endif
     if g:xcode_emph_idents
-      hi IdentifierDef guifg=#6bdfff guibg=NONE gui=NONE cterm=NONE
-      hi LocalIdent guifg=#acf2e4 guibg=NONE gui=NONE cterm=NONE
-      hi LibraryIdent guifg=#dabaff guibg=NONE gui=NONE cterm=NONE
+      hi IdentifierDef guifg=#70d7ff guibg=NONE gui=NONE cterm=NONE
+      hi LocalIdent guifg=#66d4cf guibg=NONE gui=NONE cterm=NONE
+      hi LibraryIdent guifg=#ff6482 guibg=NONE gui=NONE cterm=NONE
     else
-      hi IdentifierDef guifg=#4eb0cc guibg=NONE gui=NONE cterm=NONE
-      hi LocalIdent guifg=#78c2b3 guibg=NONE gui=NONE cterm=NONE
-      hi LibraryIdent guifg=#b281eb guibg=NONE gui=NONE cterm=NONE
+      hi IdentifierDef guifg=#70d7ff guibg=NONE gui=NONE cterm=NONE
+      hi LocalIdent guifg=#66d4cf guibg=NONE gui=NONE cterm=NONE
+      hi LibraryIdent guifg=#ff6482 guibg=NONE gui=NONE cterm=NONE
     endif
     if g:xcode_match_paren_style
       hi MatchParen guifg=#292a30 guibg=#fef937 gui=NONE cterm=NONE
@@ -1402,16 +1402,16 @@ endif
 " Color: green_wash   #243330 ~
 " Color: orange_wash  #382e27 ~
 " Color: red_wash     #3b2d2b ~
-" Color: blue         #4eb0cc ~
-" Color: light_blue   #6bdfff ~
-" Color: orange       #ffa14f ~
-" Color: pink         #ff7ab2 ~
-" Color: red          #d9c97c ~
-" Color: yellow       #d9c97c ~
-" Color: purple       #b281eb ~
-" Color: light_purple #dabaff ~
-" Color: teal         #78c2b3 ~
-" Color: light_teal   #acf2e4 ~
+" Color: blue         #70d7ff ~
+" Color: light_blue   #70d7ff ~
+" Color: orange       #ff6961 ~
+" Color: pink         #ff6482 ~
+" Color: red          #fff261 ~
+" Color: yellow       #fff261 ~
+" Color: purple       #ff6482 ~
+" Color: light_purple #ff6482 ~
+" Color: teal         #66d4cf ~
+" Color: light_teal   #66d4cf ~
 " Color: green        #84b360 ~
 " Color: light_green  #b0e687 ~
 " Background: dark
