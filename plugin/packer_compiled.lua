@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
+  ["nyoom.nvim"] = {
+    loaded = true,
+    path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/nyoom.nvim",
+    url = "https://github.com/nyoom-engineering/nyoom.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/packer.nvim",
