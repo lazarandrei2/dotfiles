@@ -104,11 +104,6 @@ _G.packer_plugins = {
     path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["material.nvim"] = {
-    loaded = true,
-    path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/material.nvim",
-    url = "https://github.com/marko-cerovac/material.nvim"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -129,11 +124,6 @@ _G.packer_plugins = {
     path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
-  ["nyoom.nvim"] = {
-    loaded = true,
-    path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/nyoom.nvim",
-    url = "https://github.com/nyoom-engineering/nyoom.nvim"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -148,11 +138,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ["rose-pine"] = {
-    loaded = true,
-    path = "/Users/andreilazar/.local/share/nvim/site/pack/packer/start/rose-pine",
-    url = "https://github.com/rose-pine/neovim"
   },
   ["telescope.nvim"] = {
     loaded = true,
