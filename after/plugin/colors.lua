@@ -1,2 +1,2 @@
-vim.cmd.colorscheme('custom-candy')
+vim.cmd.colorscheme('habamax')
 
