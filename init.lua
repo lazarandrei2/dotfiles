@@ -1,2 +1,2 @@
-require("andreilazar")
+require("configurations")
 
