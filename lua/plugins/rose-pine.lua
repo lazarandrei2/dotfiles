@@ -2,6 +2,9 @@ return {
     'rose-pine/neovim', 
     name = 'rose-pine' ,
     config = function ()
+        require('rose-pine').setup({
+            disable_background = true,
+        })
 
         function detectDarkModeMacOS()
             local command = "defaults read -g AppleInterfaceStyle 2>/dev/null"
