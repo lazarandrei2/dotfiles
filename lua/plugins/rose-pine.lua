@@ -26,11 +26,11 @@ return {
 
         local mode = detectDarkModeMacOS()
         if mode == true then
-            vim.cmd.colorscheme "rose-pine"
+--            vim.cmd.colorscheme "rose-pine"
         elseif mode == false then
-            vim.cmd.colorscheme "rose-pine-dawn"
+ --           vim.cmd.colorscheme "rose-pine-dawn"
         else
-            vim.cmd.colorscheme "rose-pine"
+  --          vim.cmd.colorscheme "rose-pine"
         end
     end
 }
