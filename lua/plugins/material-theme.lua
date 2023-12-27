@@ -5,7 +5,6 @@ return {
         require("material").setup({
             disable = {
                 background = true,
-                eob_lines = true
             },
 
             high_visibility = {
