@@ -25,7 +25,7 @@ return {
             return nil  -- Unable to determine mode
         end
 
-        vim.cmd.colorscheme("rose-pine")
+        --vim.cmd.colorscheme("rose-pine")
 
         local mode = detectDarkModeMacOS()
         if mode == true then
