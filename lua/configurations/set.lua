@@ -1,6 +1,8 @@
 vim.opt.nu = true
 vim.opt.relativenumber = true
-vim.opt.laststatus = 0
+
+vim.opt.laststatus = 0 -- hides the filename line at the bottom
+vim.opt.cmdheight = 0 -- unifies command line with status line
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4

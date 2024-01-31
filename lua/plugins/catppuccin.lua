@@ -6,7 +6,6 @@ return {
 			flavour = "frappe",
 		})
 
-
         vim.cmd.colorscheme("catppuccin")
 	end,
 }
