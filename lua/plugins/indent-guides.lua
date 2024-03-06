@@ -4,6 +4,6 @@ return {
 	opts = {},
 
 	config = function()
-		require("ib").setup()
+		require("ibl").setup()
 	end,
 }
