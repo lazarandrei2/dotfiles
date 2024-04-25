@@ -6,6 +6,6 @@ return {
 			flavour = "macchiato",
 		})
 
-        vim.cmd.colorscheme("catppuccin-frappe")
+        -- vim.cmd.colorscheme("catppuccin-frappe")
 	end,
 }
