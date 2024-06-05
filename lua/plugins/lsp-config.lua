@@ -34,6 +34,10 @@ return {
 			lspconfig.tailwindcss.setup({
 				capabilities = capabilities,
 			})
+			lspconfig.elixirls.setup({
+				cmd = { "/Users/andreilazar/.local/share/nvim/mason/bin/elixir-ls" },
+				capabilities = capabilities,
+			})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
