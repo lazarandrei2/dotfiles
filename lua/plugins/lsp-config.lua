@@ -25,6 +25,9 @@ return {
 			lspconfig.tsserver.setup({
 				capabilities = capabilities,
 			})
+			lspconfig.volar.setup({
+				capabilities = capabilities,
+			})
 			lspconfig.gopls.setup({
 				capabilities = capabilities,
 			})
@@ -37,6 +40,12 @@ return {
 			lspconfig.elixirls.setup({
 				cmd = { "/Users/andreilazar/.local/share/nvim/mason/bin/elixir-ls" },
 				capabilities = capabilities,
+			})
+			lspconfig.sourcekit.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.rust_analyzer.setup({
+				capabilities = capabilities
 			})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
