@@ -17,15 +17,17 @@ return {
 		"neovim/nvim-lspconfig",
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
 			local lspconfig = require("lspconfig")
+			local util = require("lspconfig.util")
+
+			lspconfig.angularls.setup({
+				root_dir = util.root_pattern('angular.json', 'project.json'),
+				capabilities = capabilities
+			})
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
-			lspconfig.tsserver.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.volar.setup({
+			lspconfig.ts_ls.setup({
 				capabilities = capabilities,
 			})
 			lspconfig.gopls.setup({
@@ -39,9 +41,6 @@ return {
 			})
 			lspconfig.elixirls.setup({
 				cmd = { "/Users/andreilazar/.local/share/nvim/mason/bin/elixir-ls" },
-				capabilities = capabilities,
-			})
-			lspconfig.sourcekit.setup({
 				capabilities = capabilities,
 			})
 			lspconfig.rust_analyzer.setup({
