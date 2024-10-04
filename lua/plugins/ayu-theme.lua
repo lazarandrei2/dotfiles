@@ -4,6 +4,6 @@ return {
 	config = function()
 		vim.g.ayucolor = "mirage"
 
-        vim.cmd.colorscheme("ayu")
+        -- vim.cmd.colorscheme("ayu")
 	end
 }
