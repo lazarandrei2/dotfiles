@@ -10,17 +10,17 @@ return {
 		-- Color table for highlights
 		-- stylua: ignore
 		local colors = {
-			bg       = '#191724',
-			fg       = '#e0def4',
-			yellow   = '#f6c177',
-			cyan     = '#31748f',
-			darkblue = '#2a273f',
-			green    = '#9ccfd8',
-			orange   = '#eb6f92',
-			violet   = '#c4a7e7',
-			magenta  = '#c4a7e7',
-			blue     = '#3e8fb0',
-			red      = '#eb6f92',
+			bg       = '#242424', -- Dark background
+			fg       = '#deddda', -- Light foreground
+			yellow   = '#f8e45c', -- Adwaita yellow
+			cyan     = '#99c1f1', -- Adwaita blue (closest to cyan)
+			darkblue = '#1c1c1c', -- Darker variant of background
+			green    = '#57e389', -- Adwaita green
+			orange   = '#ffa348', -- Adwaita orange
+			violet   = '#c061cb', -- Adwaita purple (closest to violet)
+			magenta  = '#dc8add', -- Adwaita pink (closest to magenta)
+			blue     = '#62a0ea', -- Adwaita blue
+			red      = '#ed333b', -- Adwaita red
 		}
 
 		local conditions = {
@@ -83,17 +83,9 @@ return {
 		end
 
 		ins_left {
-		function()
-				return '▊'
-			end,
-			color = { fg = colors.blue }, -- Sets highlighting of component
-			padding = { left = 0, right = 1 }, -- We don't need space before this
-		}
-
-		ins_left {
 			-- mode component
-		function()
-				return ''
+			function()
+				return ' '
 			end,
 			color = function()
 				-- auto change color according to neovims mode
@@ -121,7 +113,7 @@ return {
 				}
 				return { fg = mode_color[vim.fn.mode()] }
 			end,
-			padding = { right = 1 },
+			padding = { left = 1, right = 1 },
 		}
 
 		ins_left {
@@ -154,30 +146,9 @@ return {
 		-- Insert mid section. You can make any number of sections in neovim :)
 		-- for lualine it's any number greater then 2
 		ins_left {
-		function()
+			function()
 				return '%='
 			end,
-		}
-
-		ins_left {
-			-- Lsp server name .
-		function()
-				local msg = 'No Active Lsp'
-				local buf_ft = vim.api.nvim_buf_get_option(0, 'filetype')
-				local clients = vim.lsp.get_active_clients()
-				if next(clients) == nil then
-					return msg
-				end
-				for _, client in ipairs(clients) do
-					local filetypes = client.config.filetypes
-					if filetypes and vim.fn.index(filetypes, buf_ft) ~= -1 and client.name ~= "null-ls" then
-						return client.name
-					end
-				end
-				return msg
-			end,
-			icon = ' LSP:',
-			color = { fg = '#ffffff', gui = 'bold' },
 		}
 
 		-- Add components to right sections
@@ -211,14 +182,7 @@ return {
 				removed = { fg = colors.red },
 			},
 			cond = conditions.hide_in_width,
-		}
-
-		ins_right {
-		function()
-				return '▊'
-			end,
-			color = { fg = colors.blue },
-			padding = { left = 1 },
+			padding = { right = 1 }
 		}
 
 		-- Now don't forget to initialize lualine
