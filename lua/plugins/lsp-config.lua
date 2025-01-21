@@ -27,6 +27,9 @@ return {
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
+			lspconfig.zls.setup({
+				capabilities = capabilities,
+			})
 			lspconfig.tsserver.setup({
 				capabilities = capabilities,
 			})
