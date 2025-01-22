@@ -20,6 +20,9 @@ return {
 			local lspconfig = require("lspconfig")
 			local util = require("lspconfig.util")
 
+			lspconfig.tsserver.setup({
+				capabilities = capabilities,
+			})
 			lspconfig.angularls.setup({
 				root_dir = util.root_pattern('angular.json', 'project.json'),
 				capabilities = capabilities
@@ -30,9 +33,6 @@ return {
 			lspconfig.zls.setup({
 				capabilities = capabilities,
 			})
-			lspconfig.tsserver.setup({
-				capabilities = capabilities,
-			})
 			lspconfig.gopls.setup({
 				capabilities = capabilities,
 			})
@@ -40,10 +40,6 @@ return {
 				capabilities = capabilities,
 			})
 			lspconfig.tailwindcss.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.elixirls.setup({
-				cmd = { "/Users/andreilazar/.local/share/nvim/mason/bin/elixir-ls" },
 				capabilities = capabilities,
 			})
 			lspconfig.rust_analyzer.setup({
