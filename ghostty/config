@@ -1,0 +1,9 @@
+font-size = 16
+font-family = "SF Mono"
+font-thicken = true
+cursor-style = block
+shell-integration-features = no-cursor
+theme = opencode
+#background-opacity = 0.995
+window-height = 40
+window-width = 130

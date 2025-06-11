@@ -1,7 +1,0 @@
-font-family = "SF Mono"
-font-size = 15
-cursor-style = block
-shell-integration-features = no-cursor
-theme = /Applications/Ghostty.app/Contents/Resources/ghostty/themes/Kanagawa Dragon
-window-height = 40
-window-width = 125
