@@ -20,7 +20,17 @@ return {
 			local lspconfig = require("lspconfig")
 			local util = require("lspconfig.util")
 
-			lspconfig.tsserver.setup({
+			lspconfig.sourcekit.setup({
+				root_dir = lspconfig.util.root_pattern(
+					'.git',
+					'Package.swift',
+					'compile_commands.json'
+				),
+			})
+			lspconfig.eslint.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.ts_ls.setup({
 				capabilities = capabilities,
 			})
 			lspconfig.angularls.setup({
