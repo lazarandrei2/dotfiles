@@ -21,7 +21,7 @@ vim.opt.undofile = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
-vim.opt.termguicolors = false
+vim.opt.termguicolors = true 
 
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
@@ -34,5 +34,8 @@ vim.g.mapleader = " "
 
 vim.opt.clipboard = "unnamedplus"
 
-vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+-- vim.opt.list = true
+-- vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+
+vim.api.nvim_set_hl(0, "StatusLine", {  bg = 'NONE' })
+vim.api.nvim_set_hl(0, "StatusLineNC", {  bg = 'NONE' })

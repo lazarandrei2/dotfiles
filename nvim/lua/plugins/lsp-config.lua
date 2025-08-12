@@ -20,23 +20,10 @@ return {
 			local lspconfig = require("lspconfig")
 			local util = require("lspconfig.util")
 
-			lspconfig.sourcekit.setup({
-				root_dir = lspconfig.util.root_pattern(
-					'.git',
-					'Package.swift',
-					'compile_commands.json'
-				),
-			})
-			lspconfig.eslint.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.ts_ls.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.angularls.setup({
-				root_dir = util.root_pattern('angular.json', 'project.json'),
-				capabilities = capabilities
-			})
+			lspconfig.sourcekit.setup {}
+			-- lspconfig.ts_ls.setup({
+			-- 	capabilities = capabilities,
+			-- })
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
@@ -62,6 +49,7 @@ return {
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
 			vim.keymap.set("n", "gr", vim.lsp.buf.references, {})
+			vim.keymap.set("n", "U", vim.diagnostic.open_float, {})
 			vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
 		end,
 	},

@@ -1,0 +1,32 @@
+# Panda Theme for Ghostty
+# Based on the Panda Syntax theme by Siamak Mokhtari
+
+# ANSI Colors (0-15)
+palette = 0=#292A2B
+palette = 1=#FF2C6D
+palette = 2=#19f9d8
+palette = 3=#FFB86C
+palette = 4=#6FC1FF
+palette = 5=#FF75B5
+palette = 6=#B084EB
+palette = 7=#E6E6E6
+palette = 8=#676B79
+palette = 9=#FF4B82
+palette = 10=#19f9d8
+palette = 11=#FFCC95
+palette = 12=#45A9F9
+palette = 13=#FF9AC1
+palette = 14=#BCAAFE
+palette = 15=#FFFFFF
+
+# Background and foreground
+background = #292A2B
+foreground = #E6E6E6
+
+# Cursor colors
+cursor-color = #FF4B82
+cursor-text = #292A2B
+
+# Selection colors
+selection-background = #FFB86C
+selection-foreground = #E6E6E6
