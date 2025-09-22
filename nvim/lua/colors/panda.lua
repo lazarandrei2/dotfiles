@@ -38,11 +38,11 @@ function M.setup()
 
 	-- Syntax
 	vim.api.nvim_set_hl(0, "Comment", { fg = c.comment, italic = true })
-	vim.api.nvim_set_hl(0, "String", { fg = c.color12 })
-	vim.api.nvim_set_hl(0, "Function", { fg = c.color14, bold = true })
-	vim.api.nvim_set_hl(0, "Identifier", { fg = c.color13 })
-	vim.api.nvim_set_hl(0, "Statement", { fg = c.cyan })
-	vim.api.nvim_set_hl(0, "Type", { fg = c.color14 })
+	vim.api.nvim_set_hl(0, "String", { fg = c.green })
+	vim.api.nvim_set_hl(0, "Function", { fg = c.blue, bold = true })
+	vim.api.nvim_set_hl(0, "Identifier", { fg = c.white })
+	vim.api.nvim_set_hl(0, "Statement", { fg = c.magenta })
+	vim.api.nvim_set_hl(0, "Type", { fg = c.yellow })
 	vim.api.nvim_set_hl(0, "Number", { fg = c.yellow })
 	vim.api.nvim_set_hl(0, "Operator", { fg = c.color15 })
 

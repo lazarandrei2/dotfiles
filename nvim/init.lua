@@ -1,2 +1,2 @@
 require("configurations")
--- require("colors.opencode").setup()
+require("colors.panda").setup()

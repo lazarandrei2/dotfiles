@@ -12,4 +12,8 @@ set --export PATH $BUN_INSTALL/bin $PATH
 # bat
 set --export BAT_THEME "ansi"
 
+# mise
 /Users/lazarandrei/.local/bin/mise activate fish | source
+
+# neovim
+alias vim="nvim"
