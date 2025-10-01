@@ -1,12 +1,11 @@
+theme = panda-custom
 font-size = 18
 font-family = "SF Mono"
 cursor-style = block
 shell-integration-features = no-cursor
-theme = panda
 keybind = global:ctrl+grave_accent=toggle_quick_terminal
 window-height = 30
 window-width = 130
 window-padding-x = 10
 window-padding-y = 2
-auto-update-channel = tip
 keybind = shift+enter=text:\n

@@ -17,3 +17,11 @@ set --export BAT_THEME "ansi"
 
 # neovim
 alias vim="nvim"
+
+# sst
+fish_add_path /Users/lazarandrei/.sst/bin
+
+# cloudflare
+set -gx TF_VAR_cloudflare_api_token "REPLACE"
+set -gx TF_VAR_cloudflare_account_id "REPLACE" 
+set -gx CLOUDFLARE_API_TOKEN "REPLACE"

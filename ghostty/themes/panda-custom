@@ -1,0 +1,34 @@
+# Panda Theme for Ghostty Terminal
+# Based on the Panda Syntax theme for VS Code by Siamak Mokhtari
+# https://github.com/siamak/panda-syntax-vscode
+
+# Background and foreground colors
+background = #292A2B
+foreground = #E6E6E6
+
+# Cursor colors
+cursor-color = #FF4B82
+cursor-text = #E6E6E6
+
+# Selection colors
+selection-background = #FFB86C
+selection-foreground = #E6E6E6
+
+# Terminal palette colors (16-color ANSI palette)
+# Based on the terminal colors from panda VS Code theme
+palette = 0=#222223
+palette = 1=#FF2C6D
+palette = 2=#19f9d8
+palette = 3=#FFB86C
+palette = 4=#45A9F9
+palette = 5=#FF75B5
+palette = 6=#B084EB
+palette = 7=#CDCDCD
+palette = 8=#757575
+palette = 9=#FF4B82
+palette = 10=#6FE7D2
+palette = 11=#FFCC95
+palette = 12=#6FC1FF
+palette = 13=#FF9AC1
+palette = 14=#BCAAFE
+palette = 15=#FFFFFF
