@@ -1,0 +1,48 @@
+# Panic Nova Dark Theme for Ghostty
+# Based on the official Panic Nova editor dark theme
+# https://nova.app
+
+# Background and foreground colors
+background = #1b1d1e
+foreground = #cfdae6
+
+# Cursor colors
+cursor-color = #73ace6
+cursor-text = #1b1d1e
+
+# Selection colors
+selection-background = #34383d
+selection-foreground = #cfdae6
+
+# Terminal palette colors (16-color ANSI palette)
+# Black (normal and bright)
+palette = 0=#1b1d1e
+palette = 8=#5c6166
+
+# Red (normal and bright)
+palette = 1=#f79588
+palette = 9=#ff9589
+
+# Green (normal and bright)
+palette = 2=#72e5af
+palette = 10=#99ffcf
+
+# Yellow (normal and bright)
+palette = 3=#ebd38d
+palette = 11=#ffeaa7
+
+# Blue (normal and bright)
+palette = 4=#73ace6
+palette = 12=#99ccff
+
+# Magenta (normal and bright)
+palette = 5=#c3a1e6
+palette = 13=#e8d1ff
+
+# Cyan (normal and bright)
+palette = 6=#5ce6da
+palette = 14=#99ffeb
+
+# White (normal and bright)
+palette = 7=#cfdae6
+palette = 15=#f2f9ff

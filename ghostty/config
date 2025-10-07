@@ -1,6 +1,7 @@
-theme = panda-custom
+theme = panic-nova
+macos-titlebar-style = transparent
 font-size = 18
-font-family = "SF Mono"
+font-family = "SF Mono Terminal"
 cursor-style = block
 shell-integration-features = no-cursor
 keybind = global:ctrl+grave_accent=toggle_quick_terminal
